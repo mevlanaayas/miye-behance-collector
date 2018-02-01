@@ -8,3 +8,5 @@ geckodriver.log
 
 *.pyc
 env
+sendgrid.env
+celerybeat-schedule.db

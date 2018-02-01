@@ -1,3 +1,4 @@
+from apps.website.media import Project
 from .web_automat import find_links
 from selenium import webdriver
 
@@ -20,10 +21,13 @@ script_to_func = """
     return mine();
 """
 driver = webdriver.Firefox()
-url = 'https://www.behance.net/ummiyemazlec55'
+url = 'https://www.behance.net/selingurbuz'
+# url = 'https://www.behance.net/ummiyemazlec55'
+# TODO: send get request to url, if not found warn user
+# TODO: use try-except to handle and report script fault
 default_array = find_links(url=url, driver=driver, script=script_to_func)
 project_links = default_array[0]
-# TODO: project_link ile projects sayısı çelişirse mail at
+# TODO: if project_links and project_count does not match, warn user
 like_count = default_array[1]
 view_count = default_array[2]
 script_to_func = """
@@ -72,6 +76,7 @@ script_to_func = """
     return mine();
 """
 projects = {}
+project_list = []
 count = 0
 for link in project_links:
     project_name = link.split('/')[5]
@@ -82,20 +87,28 @@ for link in project_links:
     description = project_array[3]
     tool_array = project_array[4]
     tag_array = project_array[5]
+    tool_array = list(set(tool_array))
 
-    image_links_tuple = tuple(image_links)
-    keyword_array_tuple = tuple(keyword_array)
-    tool_array_tuple = tuple(tool_array)
-    tag_array_tuple = tuple(tag_array)
+    if description is None:
+        description = 'There is no given description.'
+    if tool_array is None:
+        tool_array = ['There is no given tools used.']
+    if tag_array is None:
+        tag_array = ['There is no given tag.']
 
-    projects[project_name + '_images'] = image_links_tuple
-    projects[project_name + '_keywords'] = keyword_array_tuple
-    projects[project_name + '_published'] = published_date
-    projects[project_name + '_description'] = description
-    projects[project_name + '_tools'] = tool_array_tuple
-    projects[project_name + '_tags'] = tag_array_tuple
-    projects[project_name + '_likes'] = like_count[count]
-    projects[project_name + '_views'] = view_count[count]
+    project_list.append(
+        Project(
+            project_title=project_name,
+            poster_image=image_links[0],
+            publish_date=published_date,
+            project_desc=description,
+            keywords=keyword_array,
+            tags=tag_array,
+            tools=tool_array,
+            all_images_links=image_links,
+            view_count=view_count[count],
+            like_count=like_count[count],
+        )
+    )
     count = count + 1
-
 driver.close()
