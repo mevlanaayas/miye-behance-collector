@@ -7,4 +7,14 @@ __pycache__/
 geckodriver.log
 
 *.pyc
+
+# environment files
 env
+sendgrid.env
+miye.env
+
+# db files
+celerybeat-schedule.db
+
+# test files
+test.py
