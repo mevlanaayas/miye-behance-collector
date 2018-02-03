@@ -80,11 +80,13 @@ project_list = []
 count = 0
 for link in project_links:
     project_name = link.split('/')[5]
+    project_name = project_name.replace("'", "")
     project_array = find_links(url=link, driver=driver, script=script_to_func)
     image_links = project_array[0]
     keyword_array = project_array[1]
     published_date = project_array[2]
     description = project_array[3]
+    description = description.replace("'", "")
     tool_array = project_array[4]
     tag_array = project_array[5]
     tool_array = list(set(tool_array))
