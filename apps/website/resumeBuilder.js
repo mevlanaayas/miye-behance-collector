@@ -21,6 +21,58 @@ var project_json_variable = {
 	'unique_project_array' : [
 
         {
+            'project_title' : 'TRASH ISLES',
+            'poster_image' : 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/85c78f60933603.5a5e2c353e4f5.jpg',
+            'publish_date' : 'January 16, 2018',
+            'project_desc' : 'There is no given description.',
+            'keywords' : ['Graphic Design'],
+            'tags' : [],
+            'tools' : [],
+            'all_images_links' : ['https://mir-s3-cdn-cf.behance.net/project_modules/1400/85c78f60933603.5a5e2c353e4f5.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/41587c60933603.5a5e2c353ecb4.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/53d6e560933603.5a5e2c353f062.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/b6591e60933603.5a5e2c353f304.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f0163360933603.5a5e2c353e9e4.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/60529a60933603.5a5e2c353dfd6.jpg'],
+            'view_count' : 14,
+            'like_count' : 2
+        },
+        
+        {
+            'project_title' : 'GAME OF THRONES',
+            'poster_image' : 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/57a67160932229.5a5e2524e4659.jpg',
+            'publish_date' : 'January 16, 2018',
+            'project_desc' : 'There is no given description.',
+            'keywords' : ['Illustration', 'Graphic Design', 'Film'],
+            'tags' : [],
+            'tools' : [],
+            'all_images_links' : ['https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/57a67160932229.5a5e2524e4659.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a923ea60932229.5a5e2524e3f5e.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4aa7e960932229.5a5e2524e3b7a.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8b3ec160932229.5a5e2524e3442.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7cf8fd60932229.5a5e2524e304a.jpg'],
+            'view_count' : 14,
+            'like_count' : 2
+        },
+        
+        {
+            'project_title' : 'KÜÇÜK AFACANLAR =)',
+            'poster_image' : 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/3ef56459422633.5a215de6e8b8b.jpg',
+            'publish_date' : 'December 1, 2017',
+            'project_desc' : 'There is no given description.',
+            'keywords' : ['Illustration', 'Graphic Design', 'Character Design'],
+            'tags' : [],
+            'tools' : [],
+            'all_images_links' : ['https://mir-s3-cdn-cf.behance.net/project_modules/1400/3ef56459422633.5a215de6e8b8b.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f41fc159422633.5a215de6e935f.jpg', 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/abbc9f59422633.5a215de6e90c7.jpg'],
+            'view_count' : 43,
+            'like_count' : 7
+        },
+        
+        {
+            'project_title' : 'THE NORT REMEMBERS',
+            'poster_image' : 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be787859422347.5a215b7999c48.jpg',
+            'publish_date' : 'December 1, 2017',
+            'project_desc' : 'There is no given description.',
+            'keywords' : ['Graphic Design', 'Illustration', 'Drawing'],
+            'tags' : [],
+            'tools' : [],
+            'all_images_links' : ['https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be787859422347.5a215b7999c48.jpg'],
+            'view_count' : 41,
+            'like_count' : 10
+        },
+        
+        {
             'project_title' : 'unique_project_name',
             'poster_image' : 'unique_cover_image',
             'publish_date' : 'unique_publish_date',

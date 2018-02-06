@@ -1,4 +1,4 @@
-from apps.behance_collector.behance import project_list
+from apps.behance_collector.behance import gatherer
 import os
 
 project_json_template = """
@@ -54,8 +54,10 @@ def render_js_file(int_project_list):
 
 
 def task_celery():
-    render_js_file(project_list)
+    projects = gatherer()
+    render_js_file(projects)
 
 
 if __name__ == "__main__":
+    project_list = gatherer()
     render_js_file(project_list)
