@@ -26,8 +26,8 @@ def gatherer():
         return mine();
     """
     driver = webdriver.Firefox()
-    url = 'https://www.behance.net/selingurbuz'
-    # url = 'https://www.behance.net/ummiyemazlec55'
+    # url = 'https://www.behance.net/selingurbuz'
+    url = 'https://www.behance.net/miye'
     # TODO: send get request to url, if not found warn user
     # TODO: use try-except to handle and report script fault
     default_array = find_links(url=url, driver=driver, script=script_to_func)
