@@ -1,7 +1,7 @@
 # Miye
-App run hourly and get projects' details from behance.com with given user url.
-All json field and all info that will be returned from behance.
-Update js file with scheduled celery worker.
+App runs hourly and gets details of projects from behance.com with given user url.
+All json field and all info will be filled with data which will be returned from behance.
+Updates js file with scheduled celery worker.
 
 ## Getting Started
 
